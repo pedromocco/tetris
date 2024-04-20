@@ -11,7 +11,7 @@ It was a quite challenging but at the same time fun project, as it explores and 
 This project is not finished
 
 
-## Controles
+## Controllers
 
 Keyboard only:
 
