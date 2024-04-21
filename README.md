@@ -2,7 +2,7 @@
 ![Logo](https://upload.wikimedia.org/wikipedia/fr/d/d4/The_Tetris_Company_Logo.png)
 
 
-# Tetris P5.JS(on working)
+# Tetris P5.JS
 
 Tetris P5.JS is made with HTML5, CSS and Javascript, supported by the p5.js library technology for the programming and physics logic of the game itself, as well as implementing sounds and music (made by me too, in fact) for the complete experience of what could be done with these technologies.
 
