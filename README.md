@@ -20,6 +20,10 @@ Keyboard only:
 - ➡️ = Move right
 - ⬅️ = Move left
 
+## Configure
+
+You can configure sounds, music and difficult options in Configure's menu. All music and sounds was made by me
+
 ## Deployment and test
 
 To be able to start this project, it is necessary to have [Open Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) installed and run the code from a local server.
