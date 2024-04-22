@@ -183,11 +183,10 @@ function draw() {
     //stroke("white")
     //strokeWeight("4")
     text("!!!", 560 / 2 - 80, 500 / 2);
-    text("Tu dispositivo no es", 300 / 2 - 80, 600 / 2);
-    text("compatible", 460 / 2 - 80, 650 / 2);
-    text("Esta aplicacion solo", 300 / 2 - 80, 750 / 2);
-    text("se puede ejecutar en", 300 / 2 - 80, 800 / 2);
-    text("ordenador", 460 / 2 - 80, 850 / 2);
+    text("Your device is not", 300 / 2 - 80, 600 / 2);
+    text("compatible", 420 / 2 - 80, 650 / 2);
+    text("This app only can", 300 / 2 - 80, 750 / 2);
+    text("run in a computer", 300 / 2 - 80, 800 / 2);
     pop();
   }
 }
