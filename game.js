@@ -61,10 +61,13 @@ function drawPoints() {
   textFont(font1);
   text("Record ", board.position.x - 70, board.position.y + 20);
   text(record, board.position.x - 70, board.position.y + 35);
-  text("Puntos ", board.position.x - 70, board.position.y + 60);
+  text("Points ", board.position.x - 70, board.position.y + 60);
   text(linesDone, board.position.x - 70, board.position.y + 75);
-  text("Marcha ", board.position.x - 70, board.position.y + 100);
+  text("Speed ", board.position.x - 70, board.position.y + 100);
   text(fallTime, board.position.x - 70, board.position.y + 115);
+  text("Esc ", board.position.x - 70, board.position.y + 530);
+  text("To Exit", board.position.x - 70, board.position.y + 545);
+
   pop();
 }
 
@@ -130,6 +133,7 @@ function setup() {
     board.weight + 2 * boardMargin,
     board.height + 2 * boardMargin + board.cellSide
   );
+  console.log("Made with <3 by Pedro Mocco")
 }
 /*
 La función draw es nativa de la libreria de p5js y sirve para dar 

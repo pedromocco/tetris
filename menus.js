@@ -6,9 +6,9 @@ let musicOption = true;
 let soundsOption = true;
 let difficultOption = true;
 let glowOption = false;
-let musicMessage = "Musica:   Activada";
-let soundsMessage = "Sonidos:   Activada";
-let difficultMessage = "Autovelocidad:  Activada";
+let musicMessage = "  Music:   Enable";
+let soundsMessage = "  Sounds:   Enable";
+let difficultMessage = "  Autovelocity:  Enable";
 
 /*
 
@@ -42,7 +42,7 @@ function startMenu() {
   fill("rgba(255, 255, 255, 1)");
   textSize(15);
   textFont(font1);
-  text("Comenzar", 300 / 2 + 30, 600 / 2 + 102);
+  text("Start", 350 / 2 + 30, 600 / 2 + 102);
 
   //Botón 2
 
@@ -53,7 +53,7 @@ function startMenu() {
   fill("rgba(255, 255, 255, 1)");
   textSize(10);
   textFont(font1);
-  text("Configuracion", 300 / 2 + 26, 600 / 2 + 159);
+  text("Settings", 350 / 2 + 26, 600 / 2 + 159);
 
   //Botón 3
 
@@ -64,7 +64,7 @@ function startMenu() {
   fill("rgba(255, 255, 255, 1)");
   textSize(10);
   textFont(font1);
-  text("Salir", 300 / 2 + 63, 600 / 2 + 211);
+  text("Exit", 320 / 2 + 63, 600 / 2 + 211);
 
   if (
     mouseX >= 160 &&
@@ -105,7 +105,7 @@ function configMenu() {
   fill("white");
   textSize(30);
   textFont(font1);
-  text("Configuracion", 300 / 2 - 110, 600 / 2 - 100);
+  text("Settings", 300 / 2 - 110, 600 / 2 - 100);
 
   textSize(15);
   textFont(font1);
@@ -187,7 +187,7 @@ function configMenu() {
   fill("rgba(255, 255, 255, 1)");
   textSize(10);
   textFont(font1);
-  text("Regresar", 300 / 2 + 53, 600 / 2 + 411);
+  text("Back", 335 / 2 + 53, 600 / 2 + 411);
 
   if (
     mouseX >= 157 &&
@@ -206,9 +206,9 @@ function mousePressed() {
   if (mouseX >= 148 && mouseX <= 159 && mouseY >= 241 && mouseY <= 252) {
     musicOption = !musicOption;
     if (musicOption) {
-      musicMessage = "Musica:   Activada";
+      musicMessage = "  Music:   Enable";
     } else {
-      musicMessage = "Musica:   Desactivada";
+      musicMessage = "  Music:   Disable";
     }
   }
 
@@ -216,7 +216,7 @@ function mousePressed() {
   if (mouseX >= 162 && mouseX <= 173 && mouseY >= 264 && mouseY <= 275) {
     soundsOption = !soundsOption;
     if (soundsOption) {
-      soundsMessage = "Sonidos:   Activados";
+      soundsMessage = "  Sounds:   Enable";
       soundLeft = new Audio("./sounds/left2.ogg");
       soundRight = new Audio("./sounds/right2.ogg");
       soundDown = new Audio("./sounds/down.ogg");
@@ -225,7 +225,7 @@ function mousePressed() {
       linePoint = new Audio("./sounds/line2.ogg");
       lose = new Audio("./sounds/lose.ogg");
     } else {
-      soundsMessage = "Sonidos:   Desactivados";
+      soundsMessage = "  Sounds:   Disable";
       soundLeft = undefined;
       soundRight = undefined;
       soundDown = undefined;
@@ -240,9 +240,9 @@ function mousePressed() {
   if (mouseX >= 250 && mouseX <= 261 && mouseY >= 281 && mouseY <= 292) {
     difficultOption = !difficultOption;
     if (difficultOption) {
-      difficultMessage = "Autovelocidad:   Activado";
+      difficultMessage = "  Autovelocity:  Enable";
     } else {
-      difficultMessage = "Autovelocidad:   Desctivado";
+      difficultMessage = "  Autovelocity:  Disable";
     }
   }
 
