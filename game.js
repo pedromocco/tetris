@@ -169,4 +169,21 @@ function draw() {
     //Configuración
     configMenu();
   }
+
+  if (navigator.userAgent.toLowerCase().match(/mobile/) || navigator.userAgent.toLowerCase().match(/tablet/)) {
+    clear();
+    push();
+    fill("rgba(255, 255, 255, fade)");
+    textSize(20);
+    textFont(font1);
+    //stroke("white")
+    //strokeWeight("4")
+    text("!!!", 560 / 2 - 80, 500 / 2);
+    text("Tu dispositivo no es", 300 / 2 - 80, 600 / 2);
+    text("compatible", 460 / 2 - 80, 650 / 2);
+    text("Esta aplicacion solo", 300 / 2 - 80, 750 / 2);
+    text("se puede ejecutar en", 300 / 2 - 80, 800 / 2);
+    text("ordenador", 460 / 2 - 80, 850 / 2);
+    pop();
+  }
 }
